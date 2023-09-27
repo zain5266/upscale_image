@@ -29,7 +29,7 @@ def process_upscale(input_path, output_path, model, scale=4):
 def upscale_image(img_path,output_path,model_name,scale):
     # Provide the input image path, output image path, model, and scale
     scale = 4  # Adjust the scale as needed
-    result_path = upscale_image(img_path, output_path, model_name, scale)
+    result_path = process_upscale(img_path, output_path, model_name, scale)
     if result_path:
         print(f"Upscaled image saved at: {result_path}")
         return result_path
