@@ -16,9 +16,22 @@ open the colab
     output_path: output image path ("/content/ouput.jpg")
     model_name: name of the models -> choose from available models (e.g "RealESRGAN_General_WDN_x4_v3")
     scale: select a scale like 1 to 4 
-Example run:
+
+**Example run:**
 img_path="/content/example.jpg"
+
 output_path="/content/ouput.jpg"
-model_name: "RealESRGAN_General_WDN_x4_v3"
-scale: 4
-upscale_image(img_path,output_path,model_name,scale)
+
+model_name= "RealESRGAN_General_WDN_x4_v3"
+
+scale= 4
+
+**upscale_image(img_path,output_path,model_name,scale)**
+
+The image will be saved on the output path
+**Credits**
+
+IT IS THE COLAB IMPLEMENTATION OF "upscayl"
+
+upscayl link: https://github.com/upscayl/upscayl
+
