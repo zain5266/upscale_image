@@ -29,9 +29,13 @@ scale= 4
 **upscale_image(img_path,output_path,model_name,scale)**
 
 The image will be saved on the output path
+
 **Credits**
 
 IT IS THE COLAB IMPLEMENTATION OF "upscayl"
 
-upscayl link: https://github.com/upscayl/upscayl
+**upscayl link**: https://github.com/upscayl/upscayl
+
+
+**More model are available at**:  https://github.com/upscayl/custom-models
 
