@@ -2,7 +2,7 @@ import subprocess
 import os
 def process_upscale(input_path, output_path, model, scale=4):
     # Path to the realesrgan-ncnn-vulkan executable (update this to the correct path)
-    p=os.pah.join(os.getcwd(),"bin/linux-amd64")
+    p=os.path.join(os.getcwd(),"bin/linux-amd64")
     print("path=",p)
     realesrgan_executable = p
 
