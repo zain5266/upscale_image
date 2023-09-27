@@ -1,5 +1,10 @@
 import subprocess
 import os
+
+def grant_permission():
+    command = ["chmod", "+x", "/content/upscale_image/bin/linux-amd64"]
+    subprocess.run(command, check=True)
+
 def process_upscale(input_path, output_path, model, scale=4):
     # Path to the realesrgan-ncnn-vulkan executable (update this to the correct path)
     p=os.path.join(os.getcwd(),"bin/linux-amd64")
@@ -29,6 +34,7 @@ def process_upscale(input_path, output_path, model, scale=4):
     return output_path
 
 def upscale_image(img_path,output_path,model_name,scale):
+    grant_permission()
     # Provide the input image path, output image path, model, and scale
     scale = 4  # Adjust the scale as needed
     result_path = process_upscale(img_path, output_path, model_name, scale)
