@@ -1,6 +1,9 @@
 import subprocess
 import os
 
+# packages to install
+# !sudo apt install -y vulkan-tools
+# !apt-get install libnvidia-gl-525 
 def grant_permission():
     command = ["chmod", "+x", "/content/upscale_image/bin/linux-amd64"]
     subprocess.run(command, check=True)
